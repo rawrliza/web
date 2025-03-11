@@ -1,60 +1,94 @@
-/* Define color variables */
-:root {
-    --black: #000000;
-    --cyan-bluish-gray: #abb8c3;
-    --white: #ffffff;
-    --pale-pink: #f78da7;
-    --vivid-red: #cf2e2e;
-    --luminous-vivid-orange: #ff6900;
-    --luminous-vivid-amber: #fcb900;
-    --light-green-cyan: #7bdcb5;
-    --vivid-green-cyan: #00d084;
-    --pale-cyan-blue: #8ed1fc;
-    --vivid-cyan-blue: #0693e3;
-    --vivid-purple: #9b51e0;
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* General Background Colors */
-.has-black-background-color { background-color: var(--black) !important; }
-.has-cyan-bluish-gray-background-color { background-color: var(--cyan-bluish-gray) !important; }
-.has-white-background-color { background-color: var(--white) !important; }
-.has-pale-pink-background-color { background-color: var(--pale-pink) !important; }
-.has-vivid-red-background-color { background-color: var(--vivid-red) !important; }
-.has-luminous-vivid-orange-background-color { background-color: var(--luminous-vivid-orange) !important; }
-.has-luminous-vivid-amber-background-color { background-color: var(--luminous-vivid-amber) !important; }
-.has-light-green-cyan-background-color { background-color: var(--light-green-cyan) !important; }
-.has-vivid-green-cyan-background-color { background-color: var(--vivid-green-cyan) !important; }
-.has-pale-cyan-blue-background-color { background-color: var(--pale-cyan-blue) !important; }
-.has-vivid-cyan-blue-background-color { background-color: var(--vivid-cyan-blue) !important; }
-.has-vivid-purple-background-color { background-color: var(--vivid-purple) !important; }
-
-/* General Gradient Backgrounds */
-.has-gradient-background {
-    background-size: cover;
-    background-repeat: no-repeat;
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 20px;
 }
 
-.has-vivid-cyan-blue-to-vivid-purple-gradient-background { 
-    background: linear-gradient(135deg, var(--vivid-cyan-blue) 0%, var(--vivid-purple) 100%) !important; 
+.logo {
+    height: 50px;
 }
-.has-light-green-cyan-to-vivid-green-cyan-gradient-background { 
-    background: linear-gradient(135deg, var(--light-green-cyan) 0%, var(--vivid-green-cyan) 100%) !important; 
+
+.social-icons img {
+    height: 30px;
+    margin-left: 10px;
 }
-.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background { 
-    background: linear-gradient(135deg, var(--luminous-vivid-amber) 0%, var(--luminous-vivid-orange) 100%) !important; 
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    background: #F5E6CC; /* Cream color */
+    padding: 15px 20px;
 }
-.has-luminous-vivid-orange-to-vivid-red-gradient-background { 
-    background: linear-gradient(135deg, var(--luminous-vivid-orange) 0%, var(--vivid-red) 100%) !important; 
+
+.nav-logo {
+    height: 50px;
+    margin-right: 20px;
 }
-.has-very-light-gray-to-cyan-bluish-gray-gradient-background { 
-    background: linear-gradient(135deg, #eeeeee 0%, var(--cyan-bluish-gray) 100%) !important; 
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
-.has-cool-to-warm-spectrum-gradient-background { 
-    background: linear-gradient(135deg, #4aeaDC 0%, #9778d1 20%, #cf2aba 40%, #ee2c82 60%, #fb6962 80%, #fef84c 100%) !important; 
+
+.nav-bar ul li {
+    display: inline;
 }
-.has-blush-light-purple-gradient-background { 
-    background: linear-gradient(135deg, #ffceec 0%, #9896f0 100%) !important; 
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
-.has-midnight-gradient-background { 
-    background: linear-gradient(135deg, #020381 0%, #2874fc 100%) !important; 
+
+.donate a {
+    font-weight: bold;
+    color: red;
 }
+
+/* Main Content */
+.content {
+    background: #FAF3E0; /* Light cream */
+    padding: 100px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    background: #003366; /* Dark blue */
+    color: white;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 50px;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.big-text {
+    font-size: 1.5em;
+}
+
+.small-text {
+    font-size: 0.8em;
+}
+
