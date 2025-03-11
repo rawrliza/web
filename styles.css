@@ -1,0 +1,60 @@
+/* Define color variables */
+:root {
+    --black: #000000;
+    --cyan-bluish-gray: #abb8c3;
+    --white: #ffffff;
+    --pale-pink: #f78da7;
+    --vivid-red: #cf2e2e;
+    --luminous-vivid-orange: #ff6900;
+    --luminous-vivid-amber: #fcb900;
+    --light-green-cyan: #7bdcb5;
+    --vivid-green-cyan: #00d084;
+    --pale-cyan-blue: #8ed1fc;
+    --vivid-cyan-blue: #0693e3;
+    --vivid-purple: #9b51e0;
+}
+
+/* General Background Colors */
+.has-black-background-color { background-color: var(--black) !important; }
+.has-cyan-bluish-gray-background-color { background-color: var(--cyan-bluish-gray) !important; }
+.has-white-background-color { background-color: var(--white) !important; }
+.has-pale-pink-background-color { background-color: var(--pale-pink) !important; }
+.has-vivid-red-background-color { background-color: var(--vivid-red) !important; }
+.has-luminous-vivid-orange-background-color { background-color: var(--luminous-vivid-orange) !important; }
+.has-luminous-vivid-amber-background-color { background-color: var(--luminous-vivid-amber) !important; }
+.has-light-green-cyan-background-color { background-color: var(--light-green-cyan) !important; }
+.has-vivid-green-cyan-background-color { background-color: var(--vivid-green-cyan) !important; }
+.has-pale-cyan-blue-background-color { background-color: var(--pale-cyan-blue) !important; }
+.has-vivid-cyan-blue-background-color { background-color: var(--vivid-cyan-blue) !important; }
+.has-vivid-purple-background-color { background-color: var(--vivid-purple) !important; }
+
+/* General Gradient Backgrounds */
+.has-gradient-background {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.has-vivid-cyan-blue-to-vivid-purple-gradient-background { 
+    background: linear-gradient(135deg, var(--vivid-cyan-blue) 0%, var(--vivid-purple) 100%) !important; 
+}
+.has-light-green-cyan-to-vivid-green-cyan-gradient-background { 
+    background: linear-gradient(135deg, var(--light-green-cyan) 0%, var(--vivid-green-cyan) 100%) !important; 
+}
+.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background { 
+    background: linear-gradient(135deg, var(--luminous-vivid-amber) 0%, var(--luminous-vivid-orange) 100%) !important; 
+}
+.has-luminous-vivid-orange-to-vivid-red-gradient-background { 
+    background: linear-gradient(135deg, var(--luminous-vivid-orange) 0%, var(--vivid-red) 100%) !important; 
+}
+.has-very-light-gray-to-cyan-bluish-gray-gradient-background { 
+    background: linear-gradient(135deg, #eeeeee 0%, var(--cyan-bluish-gray) 100%) !important; 
+}
+.has-cool-to-warm-spectrum-gradient-background { 
+    background: linear-gradient(135deg, #4aeaDC 0%, #9778d1 20%, #cf2aba 40%, #ee2c82 60%, #fb6962 80%, #fef84c 100%) !important; 
+}
+.has-blush-light-purple-gradient-background { 
+    background: linear-gradient(135deg, #ffceec 0%, #9896f0 100%) !important; 
+}
+.has-midnight-gradient-background { 
+    background: linear-gradient(135deg, #020381 0%, #2874fc 100%) !important; 
+}
