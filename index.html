@@ -93,7 +93,7 @@
       color: white;
       padding: 12px 0;
       overflow: hidden;
-      white-space: wrap;
+      white-space: nowrap;
     }
     
     .marquee-content {
@@ -130,26 +130,52 @@
     }
     
     .donate-button {
-      background-color: #e62c2c;
-      color: white;
-      padding: 12px 30px;
-      border-radius: 4px;
-      font-weight: bold;
-      display: inline-block;
-      transition: background-color 0.3s ease;
-    }
-    
-    .donate-button:hover {
-      background-color: #ff7e7e;
-    }
+  background-color: #757575;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  animation: pulse 2s infinite;
+}
+
+.donate-button:hover {
+  background-color: #616161;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  animation: none;
+}
+
+.donate-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+}
     
     .donate-button.gold {
-      background-color: #e91e63;
-      color: #333;
+      background-color: #e62c2c;
+      color: #ffffff;
     }
     
     .donate-button.gold:hover {
-      background-color: #ffb300;
+      background-color: #ff7e7e;
     }
     
     /* Footer */
@@ -195,7 +221,7 @@
     }
     
     .designer-name {
-      color: #ffd9fa;
+      color: #000000;
     }
     
     /* Responsive */
