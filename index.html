@@ -58,7 +58,15 @@
       width: 30px;
       height: 30px;
     }
-    
+     
+    .sticky-nav-container {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
     .logo-nav {
       display: flex;
       justify-content: space-between;
@@ -130,7 +138,7 @@
     }
     
     .donate-button {
-  background-color: #757575;
+  background-color: #e62c2c;
   color: white;
   padding: 12px 30px;
   border-radius: 4px;
@@ -143,7 +151,7 @@
 }
 
 .donate-button:hover {
-  background-color: #616161;
+  background-color: #ff7e7e;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   animation: none;
@@ -261,6 +269,7 @@
   </div>
   
   <!-- Logo and Navigation -->
+  <div class="sticky-nav-container">
   <div class="container">
     <div class="logo-nav">
       <div class="logo-container">
@@ -277,6 +286,7 @@
       </nav>
     </div>
   </div>
+</div>
   
   <!-- Rpeating Banner thing -->
   <div class="marquee-banner">
