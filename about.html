@@ -58,6 +58,14 @@
       width: 30px;
       height: 30px;
     }
+
+    .sticky-nav-container {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
     
     .logo-nav {
       display: flex;
@@ -194,12 +202,15 @@
     }
     
     .footer-logo {
-      max-width: 150px;
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 15 px;
     }
     
     .footer-column {
-      flex: 1;
-      min-width: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
     }
     
     .footer h2 {
@@ -289,6 +300,7 @@
   </div>
   
   <!-- Logo and Navigation -->
+  <div class="sticky-nav-container">
   <div class="container">
     <div class="logo-nav">
       <div class="logo-container">
